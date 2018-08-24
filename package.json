@@ -1,0 +1,23 @@
+{
+  "name": "watchdog",
+  "version": "1.0.0",
+  "description": "Google analytics client",
+  "main": "src/index.js",
+  "scripts": {
+    "dev": "cross-env NODE_ENV=development babel-node src/index.js",
+    "build": "rm -rf ./dist/ && babel src --out-dir dist/ --copy-files --source-maps"
+  },
+  "dependencies": {
+    "babel-polyfill": "^6.26.0",
+    "commander": "^2.15.0"
+  },
+  "devDependencies": {
+    "cross-env": "^5.1.4",
+    "babel-cli": "^6.26.0",
+    "babel-plugin-transform-object-rest-spread": "^6.26.0",
+    "babel-preset-env": "^1.6.1",
+    "babel-watch": "^2.0.7"
+  },
+  "author": "kiamyko",
+  "license": "ISC"
+}
